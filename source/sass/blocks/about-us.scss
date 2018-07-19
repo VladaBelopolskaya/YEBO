@@ -2,8 +2,13 @@
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  padding-top: 192px;
-  padding-bottom: 135px;
+  padding-top: 120px;
+  padding-bottom: 50px;
+
+  @media (min-width: 660px) {
+    padding-top: 192px;
+    padding-bottom: 135px;
+  }
 }
 
 .about-us__title {
@@ -14,8 +19,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px; //4 уже много
-
-  width: 450px;
+  width: 250px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +36,10 @@
     margin-left: -26px;
     top: -74px;
   }
+
+  @media (min-width: 660px) {
+    width: 450px;
+  }
 }
 
 .about-us__description {
@@ -41,10 +49,18 @@
   line-height: 34px;
   font-weight: 300;
 
-  width: 1050px;
+  width: 300px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
   padding-top: 23px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    width: 600px;
+  }
+
+  @media (min-width: 1120px) {
+    width: 1050px;
+  }
 }

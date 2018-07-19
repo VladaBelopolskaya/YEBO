@@ -3,9 +3,14 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  padding-bottom: 111px;
-  padding-top: 225px;
-  width: 535px;
+  padding-bottom: 50px;
+  padding-top: 150px;
+  background-color: #ffffff;
+
+  @media (min-width: 660px) {
+    padding-bottom: 111px;
+    padding-top: 225px;
+  }
 }
 
 .mailing__title {
@@ -35,23 +40,34 @@
 
 .mailing__form {
   padding-top: 30px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 660px) {
+    width: 535px;
+  }
 }
 
 .mailing__input {
   box-sizing: border-box;
-  width: 400px;
+  width: 300px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
   font-style: italic;
   color: #929292;
 
-
   padding-top: 23px;
   padding-left: 25px;
   padding-bottom: 18px;
+  margin-bottom: 20px;
 
-  margin-right: 5px;
+  @media (min-width: 660px) {
+    width: 400px;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
 }
 
 .mailing__button {
@@ -67,6 +83,9 @@
 
   padding-top: 23px;
   padding-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
   border: none;
 
@@ -75,5 +94,10 @@
   &:hover,
   &:focus {
     background-color: #448e72;
+  }
+
+  @media (min-width: 660px) {
+    margin: 0;
+    display: inline;
   }
 }

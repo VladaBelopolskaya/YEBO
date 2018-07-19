@@ -15,9 +15,14 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 620px;
+  flex-wrap: wrap;
+  width: 300px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 660px) {
+    width: 620px;
+  }
 }
 
 .main-nav__item a {
@@ -34,23 +39,25 @@
 }
 
 .main-nav__item {
-  position: relative;
+  @media (min-width: 660px) {
+    position: relative;
 
-  &--work {
-    margin-right: 150px;
+    &--work {
+      margin-right: 150px;
 
-    &::before {
-      position: absolute;
-      content: ".";
-      left: -35px;
+      &::before {
+        position: absolute;
+        content: ".";
+        left: -35px;
+      }
     }
-  }
 
-  &--contact {
-    &::before {
-      position: absolute;
-      content: ".";
-      left: -35px;
+    &--contact {
+      &::before {
+        position: absolute;
+        content: ".";
+        left: -35px;
+      }
     }
   }
 }
