@@ -1,0 +1,140 @@
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1600px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work__item {
+  width: 533px;
+  position: relative;
+  padding: 0;
+  padding-top: 120px;
+
+  &--first {
+    padding-top: 128px;
+    box-sizing: border-box;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon2.png");
+      background-repeat: no-repeat;
+      width: 41px;
+      height: 30px;
+      left: 50%;
+      margin-left: -20px;
+      top: 70px;
+    }
+  }
+
+  &--second {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon3.png");
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+      left: 50%;
+      margin-left: -16px;
+      top: 60px;
+    }
+  }
+
+  &--third {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon4.png");
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 41px;
+      left: 50%;
+      margin-left: -11px;
+      top: 58px;
+    }
+  }
+}
+
+.work__item img {
+  display: block;
+}
+
+.work__title {
+  color: #353738;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  width: 280px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work__description {
+  box-sizing: border-box;
+  color: #848789;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+
+  position: relative;
+
+  width: 400px;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 98px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/triangle.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 10px;
+    left: 50%;
+    margin-left: -10px;
+    top: 260px;
+  }
+
+  &--first {
+    padding-bottom: 90px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/triangle.png");
+      background-repeat: no-repeat;
+      width: 19px;
+      height: 10px;
+      left: 50%;
+      margin-left: -10px;
+      top: 254px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/line.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 1px;
+    left: 50%;
+    margin-left: -25px;
+    top: 198px;
+  }
+}

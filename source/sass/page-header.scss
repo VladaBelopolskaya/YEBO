@@ -1,0 +1,32 @@
+.page-header {
+  position: relative;
+  background-image: url("../img/photo-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  padding-top: 67px;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 85px;
+    left: 50%;
+    margin-left: -40px;
+    top: 35px;
+  }
+
+  @media (min-width: 760px) {
+    height: 600px;
+  }
+
+  @media (min-width: 960px) {
+    height: 800px;
+  }
+}

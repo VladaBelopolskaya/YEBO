@@ -1,0 +1,100 @@
+.shop__help {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 533px;
+
+  &--first {
+    width: 534px;
+  }
+}
+
+.shop__link-now {
+  position: relative;
+  width: 533px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 267px;
+  border: none;
+  background-color: rgba(88, 165, 137, 0.7);
+
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+
+  padding-top: 147px;
+
+  transition: 0.5s linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(88, 165, 137);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bike.png");
+    background-repeat: no-repeat;
+    width: 51px;
+    height: 30px;
+    left: 50%;
+    margin-left: -25px;
+    top: 106px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/photo-bg.jpg");
+    background-repeat: no-repeat;
+    width: 533px;
+    height: 267px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.shop__down {
+  background-color: #282f35;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.shop__link {
+  display: block;
+  width: 302px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #94979a;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 16px;
+
+  transition: 0.5s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #94979a;
+  }
+}
